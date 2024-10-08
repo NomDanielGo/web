@@ -1,0 +1,70 @@
+body {
+    background-color: #f0f0f0; 
+    font-family: Arial, sans-serif;
+    cursor: url("ima/cursor3dd.png"), auto; 
+    text-align: center; 
+}
+
+h1 {
+    color: #333;
+}
+
+nav {
+    margin: 20px 0; 
+}
+
+nav ul {
+    list-style: none; 
+    padding: 0; 
+    display: flex; 
+    justify-content: center; 
+    background-color: #333; 
+    overflow: hidden; 
+}
+
+nav ul li {
+    margin: 0; 
+}
+
+nav ul li a {
+    display: block; 
+    padding: 10px 20px; 
+    color: white; 
+    text-decoration: none; 
+}
+
+nav ul li a:hover {
+    background-color: #4CAF50; 
+}
+
+.gallery-container {
+    display: flex; 
+    flex-wrap: nowrap; 
+    justify-content: center; 
+    padding: 20px; 
+    overflow-x: auto;
+}
+
+.gallery-item {
+    margin: 10px; 
+    text-align: center; 
+}
+
+.gallery-item img {
+    width: 300px;
+    height: auto; 
+    border-radius: 5px; 
+    transition: transform 0.3s; 
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05); 
+}
+
+.caption {
+    margin-top: 5px; 
+    font-size: 14px; 
+    color: #666; 
+}
+
+

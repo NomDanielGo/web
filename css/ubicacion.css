@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #28a745; 
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    background-color: #333; 
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: white; 
+    text-decoration: none;
+    background-color: #333; 
+}
+
+nav ul li a:hover {
+    background-color: #4CAF50; 
+}
+
+
+#map {
+    width: 80%;
+    height: 400px;
+    margin: 20px auto;
+    border: 2px solid #fff; 
+}

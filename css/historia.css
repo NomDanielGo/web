@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1.titulo, h2.titulo {
+    color: #333;
+    padding: 20px 0;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    background-color: #333;
+}
+
+nav ul li a:hover {
+    background-color: #4CAF50;
+}
+
+
+.slider-box {
+    position: relative;
+    width: 80%;
+    height: 550px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.slider-box ul {
+    display: flex;
+    padding: 0;
+    width: 300%;
+    animation: slider 15s infinite;
+}
+
+.slider-box ul li {
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.slider-box img {
+    width: 50%;
+    height: 540px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.texto {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);  
+    width: 20%; 
+    background: rgba(0, 0, 0, 0.6); 
+    color: white;
+    padding: 20px;
+    text-align: center; 
+    box-sizing: border-box;
+    border-radius: 10px; 
+}
+
+.texto h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.texto p {
+    font-size: 16px;
+    margin: 0;
+}
+
+
+.nav {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.nav a {
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.nav a:hover, .nav a:focus {
+    background-color: #4CAF50;
+}
+
+@keyframes slider {
+    0% { margin-left: 0; }
+    33.33% { margin-left: 0; }
+    33.34% { margin-left: -100%; }
+    66.66% { margin-left: -100%; }
+    66.67% { margin-left: -200%; }
+    100% { margin-left: -200%; }
+}
